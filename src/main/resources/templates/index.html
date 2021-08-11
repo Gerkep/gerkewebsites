@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gerke</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="logo background" src="/img/gwlogo.png"></img>
+            <button class="button nav-btn">CONTACT NOW!</button>
+        </div>
+        <div class="welcome-page">
+            <div class="intro"><h1>GET A <span class="outstanding text">WEBSITE.</span></h1><h4 class="caption">-<span class="outstanding text">Grow</span> your brand</h4></div>
+            <div class="mockup background"></div>
+            <div class="occasion"><h3>FOR <span class="outstanding text">FREE</span></h3><p><span>01d 23h 15m 02s</span></p></div>
+            <button class="button main-btn">CONTACT NOW!</button>
+        </div>
+        <div class="reasons">
+            <h2 class="intro">WHY WEBSISTE...?</h2>
+
+        </div>
+        <div>
+            <h2 class="intro">YOUR WEBSITE<br> IN <span class="outstanding text">JUST FEW STEPS.</span></h2>
+            <div class="workflow background"></div>
+        </div>
+        <div class="offer">
+        </div>
+        <form th:action="@{/send}" method="POST">
+            <input type="email" id="sender" th:field="${mail.sender}" placeholder="Email">
+            <textarea id="email-text" th:field="${mail.text}" placeholder="Message"></textarea>
+            <button class="button" id="submit-btn" type="submit">Send</button>
+        </form>
+    </body>
+</html>
