@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Gerke</title>
+        <title>GerkeWebsites</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/style.css">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
@@ -13,28 +13,67 @@
     <body>
         <div class="navbar">
             <img class="logo background" src="/img/gwlogo.png"></img>
-            <button class="button nav-btn">CONTACT NOW!</button>
+            <a href="#contact" class="button nav-btn">CONTACT NOW!</a>
         </div>
         <div class="welcome-page">
-            <div class="intro"><h1>GET A <span class="outstanding text">WEBSITE.</span></h1><h4 class="caption">-<span class="outstanding text">Grow</span> your brand</h4></div>
+            <div class="intro" id="main-header"><h1>Creating best <span class="outstanding text">websites</span> for you</h1>
+            </div>
+            <div class="desktop-txt">
+                <h3>ABOUT MY SERVICES</h3>
+                <p style="margin-top: 1rem;">
+                    Hello, my name is Peter. I'm freelance web developer. <br>
+                    Let me take your online presence to another level by designing website for you.<br> 
+                    I value time and quality, so I create websites quick and effective. 
+                </p>
+            </div>
             <div class="mockup background"></div>
-            <div class="occasion"><h3>FOR <span class="outstanding text">FREE</span></h3><p><span>01d 23h 15m 02s</span></p></div>
-            <button class="button main-btn">CONTACT NOW!</button>
-        </div>
+            <div class="occasion">
+                <h3>ORDERS <span class="outstanding text">AVAILABLE</span></h3><p><div id="countdown"></div>
+                <button class="button main-btn">CONTACT NOW!</button>
+            </div>
+        </div> 
         <div class="reasons">
-            <h2 class="intro">WHY WEBSISTE...?</h2>
-
+            <h2 class="intro h2-intro" id="main-header"><span class="outstanding text">Why</span> website...?</h2>
+            <div class="badges">
+                    <div class="badge-container">
+                        <img class="badge" src="/img/pro-badge.png">
+                    </div>
+                    <h3>Professional Appearance</h3>
+                    <div class="badge-container">
+                        <img class="badge" src="/img/trus-badge.png">
+                    </div>
+                    <h3>Client Trust</h3>
+                    <div class="badge-container">
+                        <img class="badge" src="/img/unique-badge.png">
+                    </div>
+                    <h3>Unique Brand Identity</h3>
+            </div>
+            <h4 id="under-badge-txt">And more!</h4>
         </div>
         <div>
-            <h2 class="intro">YOUR WEBSITE<br> IN <span class="outstanding text">JUST FEW STEPS.</span></h2>
+            <h2 class="intro h2-intro">Your website<br> in <span class="outstanding text">just few steps.</span></h2>
             <div class="workflow background"></div>
         </div>
-        <div class="offer">
+        <div id="contact">
+            <h2 class="intro h2-intro"><span class="outstanding text">Contact</span> me</h2>
+            <form autocomplete="off" th:action="@{/send}" method="POST">
+                <input type="email" class="contact-field" id="sender" th:field="${mail.sender}" placeholder="Email">
+                <textarea id="email-text" class="contact-field" th:field="${mail.text}" placeholder="Message"></textarea>
+                <button class="button" id="submit-btn" type="submit">Send</button>
+            </form>
         </div>
-        <form th:action="@{/send}" method="POST">
-            <input type="email" id="sender" th:field="${mail.sender}" placeholder="Email">
-            <textarea id="email-text" th:field="${mail.text}" placeholder="Message"></textarea>
-            <button class="button" id="submit-btn" type="submit">Send</button>
-        </form>
+        <footer>
+            <img class="logo-foot background" src="/img/gwlogo.png"></img>
+            <div class="media-icons">
+                <a href="#" class="media-logo background" id="facebook"></a>
+                <a href="#" class="media-logo background" id="insta"></a>
+                <a href="#" class="media-logo background" id="github"></a>
+            </div>
+            <div class="footer-info">
+                <a href="#" class="info-foot">Privacy policy</a>
+                <p class="info-foot copyright">@2021 Piotr Gerke</p>
+            </div>
+        </footer>
+        <script src="/js/countdown.js"></script>
     </body>
 </html>

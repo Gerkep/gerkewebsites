@@ -6,12 +6,18 @@ body{
     background-color: black;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
+    font-kerning: normal;
+}
+a{
+    color: #2dff96ff;
+    text-decoration: none;
+    cursor: pointer;
 }
 h1{
-    font-size: 2.4em;
+    font-size: 2.6em;
 }
 h2{
-    font-size: 2em;
+    font-size: 2.4em;
 }
 h4{
     font-size: 1.4em;
@@ -40,14 +46,22 @@ h4{
     border: none;
     font-weight: 900;
     background-color: #2dff96ff;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
 }
 .nav-btn{
     float: right;
     margin: 1rem 1rem 1rem 0;
-    padding: 0.4rem 0.5rem 0.5rem;
-    height: 1.5rem;
-    width: 5.5rem;
-    font-size: 0.5em;
+    padding: 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 4rem;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 .outstanding{
     background-image: linear-gradient(45deg, #3fff7cff, #1effdfff);
@@ -55,36 +69,239 @@ h4{
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
 }
-
 .welcome-page{
     height: 90vh;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .intro{
-    margin-top: 3rem;
-    margin-left: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
-.caption{
-    margin-top: 1rem;
+#main-header{
+    margin-bottom: 0;
 }
+.desktop-txt{display: none;}
 .mockup{
-    height: 30rem;
+    height: 28rem;
     width: 100%;
     background-image: url("img/iphone-realwebsites.png");
     margin-top: 1rem;
 }
-  .occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: 1rem;}
-
-  .main-btn{
-      float: right;
-      margin-right: 2rem;
-      margin-top: -2.5rem;
-      padding: 0.8rem 1rem 0.8rem 1rem;
-  }
+.occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem;}
+.main-btn{
+    float: right;
+    margin-right: 1.4rem;
+    margin-top: -3.2rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+.badges{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.badge-container{
+    width: 70%;
+    border-bottom: solid 1px white;
+    margin: 0 10% 1rem 10%;
+}
+.badge{
+    height: 6rem;
+    width: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 1.4rem;
+}
+#under-badge-txt{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
 .workflow{
     margin: 0 auto;
     width: 95%;
     height: 25rem;
     background-image: url("/img/workflowgw.png");
     background-size: contain;
+}
+.contact-intro{
+    text-align: center;
+}
+form{
+    height: 25rem;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "sender"
+      "email-text"
+      "submit-btn"; 
+      justify-content: center; 
+      justify-items: center; 
+      align-items: center; 
+}
+#sender { grid-area: sender; height: 2rem;color: white; outline: none;}
+#email-text { grid-area: email-text; height: 10rem;color: white; outline: none;}
+#submit-btn { grid-area: submit-btn;}
+.contact-field{
+    background-color: rgb(29, 29, 29);
+    border: solid 3px rgb(53, 53, 53);
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
+}
+#submit-btn{
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+footer{
+    height: 30rem;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    clip-path: circle(67.5% at 50% 69%);
+    margin-top: 5vh;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo-foot"
+      "media-icons"
+      "footer-info"; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+}
+.logo-foot{
+    height: 10rem;
+    width: 10rem;
+    margin-top: 5rem;
+    grid-area: logo-foot; 
+}
+.media-logo{
+    height: 3rem;
+    width: 3rem;
+    background-size: contain;
+    margin: 0 1rem 0 1rem;
+}
+.footer-info { grid-area: footer-info; margin-top: -3rem; display: flex;  flex-wrap: wrap; text-align: center;}
+.media-icons { grid-area: media-icons; max-height: 4rem; display: flex;}
+.info-foot{width: 100%; margin-bottom: 2vh;}
+#insta{
+    background-image: url("/img/insta-plain.png");
+}
+#facebook{
+    background-image: url("/img/fb-plain.png");
+}
+#github{
+    background-image: url("/img/gith-plain.png");
+}
+@media(min-width: 900px){
+    .logo{
+        height:5vw;
+        width: 5vw;
+        margin: 1rem  0 0 1rem;
+    }
+    #main-header h1{
+        max-width: 50%;
+        text-align: left;
+        margin-top: 15vh;
+    }
+    .nav-btn{
+        margin: 2rem 4rem 1rem 0;
+        padding: 0.4rem 0.5rem 0.5rem;
+        height: 5vh;
+        width: 8vw;
+        font-size: 1vw;
+        border-radius: 30px;
+    }
+    .intro{
+        font-size: 2vw;
+        margin-top: 10vh;
+        margin-left: 3vw;
+    }
+    .h2-intro{
+        font-size: 4vw;
+        text-align: center;
+        margin-bottom: 8vh;
+    }
+    .desktop-txt{
+        background-color: rgb(19, 19, 19);
+        display: block;
+        width: 95vw;
+        padding: 3vh 0 4vh 3vw;
+        margin-top: 5vh;
+        font-size: 1.2vw;
+        border-radius: 40px;
+        color: rgba(255, 255, 255, 0.815);
+ 
+    }
+    .mockup{
+        position: absolute;
+        top: -5rem;
+        height: 60vw;
+        width: 45vw;
+        margin-left: 50%;
+    }
+    .occasion {font-size: 2vw; margin: 8vh 0 0 3vw; height: 20vh; width: 40vw;}
+    .main-btn{
+        border-radius: 30px;
+        margin-top: -10vh;
+        height: 8vh;
+        width: 15vw;
+        font-size: 1.4vw;
+    }
+    .badge-container{
+        margin: 0vh 25vw 2vh 25vw;
+    }
+    .badge{
+        height: 8vw;
+        width: 8vw;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    .badges h3{
+        font-size: 2vw;
+        margin-bottom: 4vh;
+    }
+    .workflow{
+        margin: 0 auto;
+        width: 60vw;
+        height: 70vh;
+    }
+    #contact{
+        margin-top: 14vh;
+    }
+    #sender { width: 25%;}
+    .contact-field{
+        font-size: 1vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    footer{
+    border-top-right-radius: 180px;
+    border-top-left-radius: 180px;
+    clip-path: none;
+    margin-top: 15vh;
+}
+.media-logo{
+    height: 3vw;
+    width: 3vw;
+    margin: 0 3vw 0 3vw;
+}
+.logo-foot{
+    height: 8vw;
+    width: 8vw;
+    margin-top: 3vh;
+}
+.footer-info {margin-top: 0;}
+
 }
