@@ -87,9 +87,9 @@ h4{
     height: 28rem;
     width: 100%;
     background-image: url("img/iphone-realwebsites.png");
-    margin-top: 1rem;
+    margin-top: -5rem;
 }
-.occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem;}
+.occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: -8rem;}
 .main-btn{
     float: right;
     margin-right: 1.4rem;
