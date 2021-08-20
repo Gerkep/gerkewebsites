@@ -35,6 +35,7 @@ h4{
     left: 0;
     background-color: rgba(0, 0, 0, 0.287);
     -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(10px);
+    z-index: 100;
 }
 .logo{
     height: 3rem;
@@ -64,7 +65,7 @@ h4{
     cursor: pointer;
 }
 .outstanding{
-    background-image: linear-gradient(45deg, #3fff7cff, #1effdfff);
+    background-image: linear-gradient(45deg, rgb(0, 226, 72), rgb(0, 224, 245));
     -webkit-background-clip: text;background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -87,9 +88,9 @@ h4{
     height: 28rem;
     width: 100%;
     background-image: url("img/iphone-realwebsites.png");
-    margin-top: -2.5rem;
+    margin-top: 0;
 }
-.occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: -3rem;}
+.occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: -8rem;}
 .main-btn{
     float: right;
     margin-right: 1.4rem;
@@ -241,7 +242,7 @@ footer{
         margin-top: 5vh;
         font-size: 1.2vw;
         border-radius: 40px;
-        color: rgba(255, 255, 255, 0.815);
+        color: rgba(255, 255, 255, 0.897);
  
     }
     .mockup{
@@ -250,6 +251,7 @@ footer{
         height: 60vw;
         width: 45vw;
         margin-left: 50%;
+        z-index: 0;
     }
     .occasion {font-size: 2vw; margin: 8vh 0 0 3vw; height: 20vh; width: 40vw;}
     .main-btn{
