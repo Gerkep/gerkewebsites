@@ -89,7 +89,7 @@ h4{
 .mockup{
     height: 28rem;
     width: 100%;
-    background-image: url("img/iphone-realwebsites4.png");
+    background-image: url("../img/iphone-realwebsites4.png");
     margin-top: 0;
 }
 .occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: -8rem;}
@@ -262,6 +262,7 @@ footer{
         height: 8vh;
         width: 15vw;
         font-size: 1.4vw;
+        padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     }
     .badge-container{
         margin: 0vh 25vw 2vh 25vw;
