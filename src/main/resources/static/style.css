@@ -43,12 +43,14 @@ h4{
     margin: 0.2rem  0 0 1rem;
 }
 .button{
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     font-weight: 900;
-    background-color: #2dff96ff;
+    background: linear-gradient(45deg, rgb(0, 226, 72), rgb(0, 224, 245) 120%);
     font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
+    color: black;
+    text-align: center;
 }
 .nav-btn{
     float: right;
@@ -87,7 +89,7 @@ h4{
 .mockup{
     height: 28rem;
     width: 100%;
-    background-image: url("img/iphone-realwebsites.png");
+    background-image: url("img/iphone-realwebsites4.png");
     margin-top: 0;
 }
 .occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: -8rem;}
@@ -255,7 +257,7 @@ footer{
     }
     .occasion {font-size: 2vw; margin: 8vh 0 0 3vw; height: 20vh; width: 40vw;}
     .main-btn{
-        border-radius: 30px;
+        border-radius: 40px;
         margin-top: -10vh;
         height: 8vh;
         width: 15vw;
