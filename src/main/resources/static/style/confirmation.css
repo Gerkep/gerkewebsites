@@ -48,10 +48,11 @@ body{
 
 @media(min-width: 1000px){
     body{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .main-message{
     font-size: 6rem;
+    margin-top:5rem;
 }
 .tick-img{
     height: 15rem;
