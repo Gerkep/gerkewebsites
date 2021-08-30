@@ -31,7 +31,7 @@ body{
     font-weight: 1000;
 }
 .back-link{
-    background-image: linear-gradient(45deg, rgb(0, 226, 72), rgb(0, 224, 245));
+    background: linear-gradient(45deg, #1fa2ff, #12d8fa, #a6ffcb);
     -webkit-background-clip: text;background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
