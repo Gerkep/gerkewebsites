@@ -227,6 +227,7 @@ footer{
         margin-top: 10vh;
         line-height: 7rem;
         margin-bottom: 10vh;
+        margin-left: 3vw;
     }
     .nav-btn{
         display: none;
@@ -234,7 +235,6 @@ footer{
     .intro{
         font-size: 2vw;
         margin-top: 10vh;
-        margin-left: 3vw;
     }
     .h2-intro{
         font-size: 4vw;
