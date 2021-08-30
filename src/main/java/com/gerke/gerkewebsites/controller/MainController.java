@@ -29,6 +29,11 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("/error")
+    public String error() {
+        return "error";
+    }
+
     @PostMapping("/send")
     public String sendMail(@ModelAttribute MyMail mail, Model model) {
         model.addAttribute("mail", mail);

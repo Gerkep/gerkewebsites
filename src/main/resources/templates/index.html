@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Webiste Services | GerkeWebsites</title>
+        <title>Webiste Services | Piotr Gerke</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/style/style.css">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
         <meta name="description" content="This is website development service. Learn how to create your own website. ">
         
     </head>
     <body>
         <div class="navbar">
-            <img class="logo background" src="/img/gwlogo.png"></img>
-            <a href="#contact" class="button nav-btn">CONTACT NOW!</a>
+            <img class="logo background" src="../img/gw-lb.png"></img>
+            <a href="#contact" class="button nav-btn"><span class="outstanding text">CONTACT NOW!</span></a>
         </div>
         <div class="welcome-page">
             <div class="intro" id="main-header"><h1>Creating best <span class="outstanding text">websites</span> for you</h1>
@@ -27,11 +27,12 @@
                     I value time and quality, so I create websites quick and effective. 
                 </p>
             </div>
+            <div class="mockup-background"></div>
             <div class="mockup background"></div>
             <div class="occasion">
-                <h3>ORDERS <span class="outstanding text">AVAILABLE</span></h3><p><div id="countdown"></div>
-                <a href="#contact" class="button main-btn">CONTACT NOW!</a>
+                <h3>ASK FOR <br><span class="outstanding text">SPECIAL PRICE</span></h3><p><div id="countdown"></div>
             </div>
+            <a href="#contact" class="button main-btn"><span class="outstanding text">CONTACT NOW!</span></a>
         </div> 
         <div class="reasons">
             <h2 class="intro h2-intro" id="main-header"><span class="outstanding text">Why</span> website...?</h2>
@@ -39,15 +40,15 @@
                     <div class="badge-container">
                         <img class="badge" src="/img/pro-badge.png">
                     </div>
-                    <h3>Professional Appearance</h3>
+                    <h3><span class="outstanding text">Professional</span> Appearance</h3>
                     <div class="badge-container">
                         <img class="badge" src="/img/trus-badge.png">
                     </div>
-                    <h3>Client Trust</h3>
+                    <h3>Client <span class="outstanding text">Trust</span></h3>
                     <div class="badge-container">
                         <img class="badge" src="/img/unique-badge.png">
                     </div>
-                    <h3>Unique Brand Identity</h3>
+                    <h3><span class="outstanding text">Unique</span> Brand Identity</h3>
             </div>
             <h4 id="under-badge-txt">And more!</h4>
         </div>
@@ -56,15 +57,15 @@
             <div class="workflow background"></div>
         </div>
         <div id="contact">
-            <h2 class="intro h2-intro"><span class="outstanding text">Contact</span> me</h2>
+            <h2 class="intro h2-intro"><span class="outstanding text">Contact me</span></h2>
             <form autocomplete="off" th:action="@{/send}" method="POST">
                 <input type="email" class="contact-field" id="sender" th:field="${mail.sender}" placeholder="Email">
                 <textarea id="email-text" class="contact-field" th:field="${mail.text}" placeholder="Message"></textarea>
-                <button class="button" id="submit-btn" type="submit">Send</button>
+                <button class="button" id="submit-btn" type="submit"><span class="outstanding text">Send</span></button>
             </form>
         </div>
         <footer>
-            <img class="logo-foot background" src="/img/gwlogo.png"></img>
+            <img class="logo-foot background" src="/img/gw-lb.png"></img>
             <div class="media-icons">
                 <a href="https://www.facebook.com/profile.php?id=100011194814784" class="media-logo background" id="facebook"></a>
                 <a href="https://www.instagram.com/gerke.p/" class="media-logo background" id="insta"></a>
@@ -75,6 +76,6 @@
                 <p class="info-foot copyright">@2021 Piotr Gerke</p>
             </div>
         </footer>
-        <script src="/js/countdown.js"></script>
+        <script src="/countdown.js"></script>
     </body>
 </html>

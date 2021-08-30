@@ -9,7 +9,7 @@ body{
     font-kerning: normal;
 }
 a{
-    color: #2dff96ff;
+    color: rgb(70, 157, 197);
     text-decoration: none;
     cursor: pointer;
 }
@@ -29,7 +29,6 @@ h4{
 }
 .navbar{
     position: fixed;
-    background-color: black;
     width: 100%;
     top: 0;
     left: 0;
@@ -46,8 +45,7 @@ h4{
     border-radius: 30px;
     border: none;
     font-weight: 900;
-    background: linear-gradient(45deg, rgb(0, 226, 72), rgb(0, 224, 245) 120%);
-    font-family: 'Source Sans Pro', sans-serif;
+    background: rgb(26, 26, 26);
     cursor: pointer;
     color: black;
     text-align: center;
@@ -67,7 +65,7 @@ h4{
     cursor: pointer;
 }
 .outstanding{
-    background-image: linear-gradient(45deg, rgb(0, 226, 72), rgb(0, 224, 245));
+    background: linear-gradient(45deg, #1fa2ff, #12d8fa, #a6ffcb);
     -webkit-background-clip: text;background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -86,17 +84,19 @@ h4{
     margin-bottom: 0;
 }
 .desktop-txt{display: none;}
+.mockup-background{
+    display: none;
+}
 .mockup{
     height: 28rem;
     width: 100%;
-    background-image: url("../img/iphone-realwebsites4.png");
+    background-image: url("../img/iphone-realwebsites3.png");
     margin-top: 0;
 }
 .occasion {font-size: 1em; line-height: 1.8em; margin-left: 2.5rem; margin-top: -8rem;}
 .main-btn{
     float: right;
-    margin-right: 1.4rem;
-    margin-top: -3.2rem;
+    margin: -3rem 1rem 0 0;
     padding: 0.8rem 1rem 0.8rem 1rem;
 }
 .badges{
@@ -124,9 +124,9 @@ h4{
 }
 .workflow{
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
     height: 25rem;
-    background-image: url("/img/workflowgw.png");
+    background-image: url("/img/workflowgw4.png");
     background-size: contain;
 }
 .contact-intro{
@@ -199,15 +199,20 @@ footer{
 .media-icons { grid-area: media-icons; max-height: 4rem; display: flex;}
 .info-foot{width: 100%; margin-bottom: 2vh;}
 #insta{
-    background-image: url("/img/insta-plain.png");
+    background-image: url("/img/insta-lb.png");
 }
 #facebook{
-    background-image: url("/img/fb-plain.png");
+    background-image: url("/img/fb-lb.png");
 }
 #github{
-    background-image: url("/img/gith-plain.png");
+    background-image: url("/img/github-lb.png");
 }
 @media(min-width: 900px){
+    .navbar{
+        position: relative;
+        background-color: transparent;
+        -webkit-backdrop-filter: blur(0px); backdrop-filter: blur(0px);
+    }
     .logo{
         height:5vw;
         width: 5vw;
@@ -216,15 +221,10 @@ footer{
     #main-header h1{
         max-width: 50%;
         text-align: left;
-        margin-top: 15vh;
+        margin-top: -5vh;
     }
     .nav-btn{
-        margin: 2rem 4rem 1rem 0;
-        padding: 0.4rem 0.5rem 0.5rem;
-        height: 5vh;
-        width: 8vw;
-        font-size: 1vw;
-        border-radius: 30px;
+        display: none;
     }
     .intro{
         font-size: 2vw;
@@ -237,32 +237,41 @@ footer{
         margin-bottom: 8vh;
     }
     .desktop-txt{
-        background-color: rgb(19, 19, 19);
         display: block;
-        width: 95vw;
         padding: 3vh 0 4vh 3vw;
         margin-top: 5vh;
         font-size: 1.2vw;
-        border-radius: 40px;
         color: rgba(255, 255, 255, 0.897);
  
     }
+    .mockup-background{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 55%;
+        clip-path: inset(0 0 0 0 round 20% 0 0 100%);
+        background: linear-gradient(45deg, #1fa2ff, #12d8fa, #a6ffcb);
+    }
     .mockup{
         position: absolute;
-        top: -3rem;
-        height: 60vw;
+        top: -5.5vh;
+        height: 55vw;
         width: 45vw;
-        margin-left: 50%;
+        margin-left: 54%;
         z-index: 0;
     }
-    .occasion {font-size: 2vw; margin: 8vh 0 0 3vw; height: 20vh; width: 40vw;}
+    .occasion {display: none;}
     .main-btn{
-        border-radius: 40px;
-        margin-top: -10vh;
-        height: 8vh;
-        width: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        margin: 8vh 0 0 3vw;
+        height: 6vh;
+        width: 12vw;
         font-size: 1.4vw;
-        padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     }
     .badge-container{
         margin: 0vh 25vw 2vh 25vw;
