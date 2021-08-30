@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.main-message{
+    margin-top: 10rem;
+    font-size: 3rem;
+}
+.tick-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.tick-img{
+    height: 8rem;
+    width: 8rem;
+    margin: 0 auto;
+}
+.thanks-txt{
+    margin-top: 4rem;
+}
+.affirmation{
+    color: rgba(255, 255, 255, 0.849);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.backlink{
+    text-decoration: none;
+    background: linear-gradient(45deg, #1fa2ff, #12d8fa, #a6ffcb);
+    -webkit-background-clip: text;background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(min-width: 1000px){
+    body{
+        font-size: 3rem;
+    }
+    .main-message{
+    font-size: 6rem;
+}
+.tick-img{
+    height: 15rem;
+    width: 15rem;
+    margin: 0 auto;
+}
+}

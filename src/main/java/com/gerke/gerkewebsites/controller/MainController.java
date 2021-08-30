@@ -38,6 +38,6 @@ public class MainController {
     public String sendMail(@ModelAttribute MyMail mail, Model model) {
         model.addAttribute("mail", mail);
         Response response = emailService.sendEmail(mail);
-        return "index";
+        return "confirmation";
     }
 }
