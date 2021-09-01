@@ -71,7 +71,6 @@ h4{
     -webkit-text-fill-color: transparent;
 }
 .welcome-page{
-    height: 90vh;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -109,7 +108,7 @@ h4{
 .badge-container{
     width: 70%;
     border-bottom: solid 1px white;
-    margin: 0 10% 1rem 10%;
+    margin: 0 20% 1rem 20%;
 }
 .badge{
     height: 6rem;
@@ -207,7 +206,7 @@ footer{
 #github{
     background-image: url("/img/github-lb.png");
 }
-@media(min-width: 900px){
+@media(min-width: 1200px){
     .navbar{
         position: relative;
         background-color: transparent;
@@ -220,6 +219,9 @@ footer{
         float: right;
         margin-top: -5rem;
         margin-right: 2rem;
+    }
+    .welcome-page{
+        height: 90vh;
     }
     #main-header h1{
         max-width: 50%;
