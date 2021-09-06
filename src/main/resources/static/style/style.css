@@ -172,6 +172,9 @@ form{
     font-family: 'Source Sans Pro', sans-serif;
     width: 60%;
 }
+.contact-field.error{
+    border: solid 2px red;
+}
 #submit-btn{
     width: 8rem;
     height: 2.5rem;

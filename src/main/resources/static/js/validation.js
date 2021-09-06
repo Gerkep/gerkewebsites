@@ -16,6 +16,7 @@ form.addEventListener('keyup', (e) => {
             return;
         }else{
             errortxt.classList.add("show")
+            form.classList.add("error");
         }
     }, 2000)
 })
@@ -24,8 +25,8 @@ function onChange(form){
     if(form.value.match(mailformat)){
             submitbtn.disabled = false;
             submitbtn.classList.add("active");
-
-        errortxt.classList.remove("show")
+            form.classList.remove("error");
+            errortxt.classList.remove("show")
     }else{
         submitbtn.disabled = true;
         submitbtn.classList.remove("active");
