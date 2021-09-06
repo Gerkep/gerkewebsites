@@ -89,7 +89,7 @@ h4{
 .mockup{
     height: 28rem;
     width: 100%;
-    background-image: url("../img/ip-mockup.png");
+    background-image: url("../img/ip-rw-final.png");
     margin-top: -2rem;
 }
 .occasion {font-size: 1em; line-height: 1.4em; margin-left: 2.5rem; margin-top: -3.5rem;}
@@ -227,7 +227,6 @@ footer{
         max-width: 50%;
         text-align: left;
         margin-top: 10vh;
-        line-height: 7rem;
         margin-bottom: 10vh;
         margin-left: 3vw;
     }
