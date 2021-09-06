@@ -1,12 +1,12 @@
-const forms = document.querySelectorAll(".contact-field");
-const errortxt = document.querySelectorAll(".error-txt");
-const submitbtns = document.getElementById("submit-btn");
+const form = document.getElementById("sender");
+const errortxt = document.getElementById("err-txt");
+const submitbtn = document.getElementById("submit-btn");
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let timer;
 
-submitbtns.forEach(submit => {submit.disabled = true});
+submitbtn.disabled = true;
 
-forms.forEach(form => {form.addEventListener('keyup', (e) => {
+form.addEventListener('keyup', (e) => {
 
     clearTimeout(timer);
 
@@ -15,28 +15,20 @@ forms.forEach(form => {form.addEventListener('keyup', (e) => {
         if(form.value.match(mailformat)){
             return;
         }else{
-            errortxt.forEach(err => {
-                err.classList.add("show")
-            })
-
+            errortxt.classList.add("show")
         }
     }, 2000)
-})})
+})
 
 function onChange(form){
     if(form.value.match(mailformat)){
-        submitbtns.forEach(submit => {
-            submit.disabled = false;
-            submit.classList.add("active");
-        });
-        errortxt.forEach(err => {
-            err.classList.remove("show")
-        })
+            submitbtn.disabled = false;
+            submitbtn.classList.add("active");
+
+        errortxt.classList.remove("show")
     }else{
-        submitbtns.forEach(submit => {
-            submit.disabled = true;
-            submit.classList.remove("active");
-            });
+        submitbtn.disabled = true;
+        submitbtn.classList.remove("active");
 
     }
 }

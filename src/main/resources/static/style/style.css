@@ -136,19 +136,24 @@ form{
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1rem 1fr 1fr; 
     gap: 0px 0px; 
-    grid-template-areas: 
+    grid-template-areas:
       "sender"
+      "error-txt" 
       "email-text"
       "submit-btn"; 
       justify-content: center; 
       justify-items: center; 
       align-items: center; 
 }
+#sender { grid-area: sender; height: 1.8rem;color: white; outline: none; padding-left: 1rem;}
+#email-text { grid-area: email-text; height: 10rem;color: white; outline: none; margin-top: 0rem; padding-left: 1rem;}
+#submit-btn { grid-area: submit-btn;}
 .error-txt{
+    grid-area: error-txt;
+    margin-top: -2.6rem;
     font-size: 0.8rem;
-    margin-top: 1rem;
     color: red;
     text-shadow: 1px 1px 8px black;
     font-weight: 1000;
@@ -158,9 +163,6 @@ form{
 .error-txt.show{
     display: block;
 }
-#sender { grid-area: sender; height: 2rem;color: white; outline: none;}
-#email-text { grid-area: email-text; height: 10rem;color: white; outline: none;}
-#submit-btn { grid-area: submit-btn;}
 .contact-field{
     background-color: rgb(29, 29, 29);
     border: solid 3px rgb(53, 53, 53);
@@ -174,8 +176,8 @@ form{
     width: 8rem;
     height: 2.5rem;
     font-size: 1.5rem;
-    background-color: rgb(31, 31, 31);
 }
+.submit-btn{background-color: rgb(31, 31, 31);}
 .button.active{
     background-color: black;
 }
