@@ -146,6 +146,18 @@ form{
       justify-items: center; 
       align-items: center; 
 }
+.error-txt{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: red;
+    text-shadow: 1px 1px 8px black;
+    font-weight: 1000;
+    display: none;
+}
+.error-txt{display: none;}
+.error-txt.show{
+    display: block;
+}
 #sender { grid-area: sender; height: 2rem;color: white; outline: none;}
 #email-text { grid-area: email-text; height: 10rem;color: white; outline: none;}
 #submit-btn { grid-area: submit-btn;}
@@ -162,6 +174,10 @@ form{
     width: 8rem;
     height: 2.5rem;
     font-size: 1.5rem;
+    background-color: rgb(31, 31, 31);
+}
+.button.active{
+    background-color: black;
 }
 footer{
     height: 30rem;
