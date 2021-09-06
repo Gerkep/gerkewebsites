@@ -319,6 +319,10 @@ footer{
         margin-top: 14vh;
     }
     #sender { width: 25%;}
+    .error-txt{
+        margin-top: -5rem;
+        font-size: 1rem;
+    }
     .contact-field{
         font-size: 1vw;
         margin-top: 5vh;
