@@ -180,9 +180,10 @@ form{
     height: 2.5rem;
     font-size: 1.5rem;
 }
-.submit-btn{background-color: rgb(31, 31, 31);}
+.submit-btn{background-color: rgb(29, 29, 29);}
 .button.active{
-    background-color: black;
+    background: linear-gradient(45deg, #1fa2ff, #12d8fa, #a6ffcb);
+    color: black;
 }
 footer{
     height: 30rem;
