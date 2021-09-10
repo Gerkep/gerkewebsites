@@ -151,7 +151,7 @@ form{
 }
 #sender { grid-area: sender; height: 1.8rem;color: white; outline: none; padding-left: 1rem;}
 #email-text { grid-area: email-text; height: 10rem;color: white; outline: none; margin-top: 0rem; padding-left: 1rem;}
-#submit-btn { grid-area: submit-btn;}
+#submit-btn { grid-area: submit-btn; width: 8rem; height: 2.5rem; font-size: 1.5rem;}
 .error-txt{
     grid-area: error-txt;
     margin-top: -2.6rem;
@@ -177,11 +177,7 @@ form{
 .contact-field.error{
     border: solid 2px red;
 }
-#submit-btn{
-    width: 8rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-}
+
 footer{
     height: 30rem;
     width: 100%;
@@ -297,7 +293,9 @@ footer{
         height: 6vh;
         width: 12vw;
         font-size: 1.4vw;
+        background: linear-gradient(45deg, #1fa2ff, #12d8fa, #a6ffcb);
     }
+    .outstanding-mobile{background: black;}
     .badge-container{
         margin: 0vh 25vw 2vh 25vw;
     }
