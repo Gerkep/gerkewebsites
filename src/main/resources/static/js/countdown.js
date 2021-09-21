@@ -1,4 +1,4 @@
-const destination = new Date("sep 30, 2021 22:00:00").getTime();
+const destination = new Date("oct 1, 2021 22:00:00").getTime();
 setInterval(function(){
 let now = new Date().getTime();
 
